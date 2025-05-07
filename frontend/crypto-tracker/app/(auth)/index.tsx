@@ -1,4 +1,4 @@
-import { View, Text, Dimensions, TouchableOpacity } from "react-native";
+import { View, Text, Dimensions, TouchableOpacity, SafeAreaView } from "react-native";
 import { Image } from "expo-image";
 
 
@@ -6,33 +6,28 @@ const { width, height } = Dimensions.get("window");
 
 const Onboarding= ({ navigation }:any) => {
   return (
-    <View className="flex-1 relative">
+    <SafeAreaView className="flex-1 justify-center items-center bg-white">
       <Image
-        className="absolute"
-        style={{ width, height }}
-        source="https://images.unsplash.com/photo-1645731504331-72636399448e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg0fHxjcnlwdG98ZW58MHx8MHx8fDA%3D"
+        className=""
+        style={{ width:width*0.9, height:height * 0.4 ,borderRadius:10}}
+        source="https://images.unsplashcom/photo-1645731504331-72636399448e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg0fHxjcnlwdG98ZW58MHx8MHx8fDA%3D"
         contentFit="cover"
         transition={1000}
       />
 
-      <Text className="absolute top-1/2 font-bold text-black text-8xl px-4 ">
-    Run. Thrive. Energize.
+      <Text className="font-bold text-black text-2xl text-center w-full">
+    Your one-stop solution for securing and managing your crypto assets
       </Text>
 
-      <View className="absolute bottom-16 w-full px-4 ">
+      <View className="  w-full px-4 ">
         <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-          <View className="w-full h-14 bg-white rounded justify-center items-center">
-            <Text className="text-black font-bold text-lg">Log in</Text>
+          <View className="w-full h-14 bg-blue-600 rounded justify-center items-center">
+            <Text className="text-white font-bold text-lg">Let&apos;s start</Text>
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-          <View className="w-full h-14 bg-black rounded justify-center items-center mt-3">
-            <Text className="text-white font-bold text-lg">Join now</Text>
-          </View>
-        </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
