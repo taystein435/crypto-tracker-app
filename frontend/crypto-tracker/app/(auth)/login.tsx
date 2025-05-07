@@ -8,8 +8,8 @@ const Login = () => {
   const [text, setText] = useState("");
  const router = useRouter();
   return (
-    <SafeAreaView className=" flex-1 justify-center bg-black">
-      <Text className='text-center text-3xl font-bold text-white'>Welcome</Text>
+    <SafeAreaView className=" flex-1 justify-center bg-white items-center">
+      <Text className='text-center text-3xl font-bold '>Welcome</Text>
       <TextInput
         mode="outlined"
         activeOutlineColor="black"
@@ -30,7 +30,7 @@ const Login = () => {
       />
     
       <TouchableOpacity onPress={() => router.navigate("/(tabs)")}>
-          <View         style={{marginTop:30 ,width:width*0.98, alignSelf: "center",}} className="h-14 bg-[#80013f] rounded justify-center items-center ">
+          <View         style={{marginTop:30 ,width:width*0.98, alignSelf: "center",}} className="h-14 bg-blue-600 rounded justify-center items-center ">
             <Text className="text-white font-extrabold  text-xl ">Log in</Text>
           </View>
         </TouchableOpacity>
