@@ -39,17 +39,17 @@ const home = () => {
           <Text></Text>
           <Text></Text>
           <View className="flex-row justify-between items-center gap-y-36 p-4 ">
-            <TouchableOpacity>
+            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg ">
               <Feather name="arrow-up-left" size={24} color="white" />
-              <Text>Send</Text>
+              <Text className="text-white">Send</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg ">
               <Feather name="arrow-up-right" size={24} color="white" />
-              <Text>Receive</Text>
+              <Text className="text-white">Receive</Text>
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg ">
               <FontAwesome5 name="plus" size={24} color="white" />
-              <Text>Buy</Text>
+              <Text className="text-white">Buy</Text>
             </TouchableOpacity>
           </View>
           
