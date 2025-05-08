@@ -10,17 +10,17 @@ const home = () => {
   return (
     <View className="flex-1 ">
       <SafeAreaView className="flex-1 bg-blue-400">
-        <View className="flex-row justify-between gap-52 p-4">
+        <View className="flex-row justify-between items-center gap-42 p-4 ">
           <View className="flex-row ">
-            <Text className="text-white">Taiwo Babatunde</Text>
+            <Text className="text-white text=3xl">Taiwo Babatunde</Text>
             <FontAwesome name="caret-down" size={24} color="white" />
                  
           </View>
           <View className="flex-row">
-          <TouchableOpacity className="bg-gray-400 " style={{ borderRadius: 50 }}>
+          <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg " style={{ borderRadius: 50, height: 50, width: 50, alignItems: "center", justifyContent: "center" }}>
           <MaterialCommunityIcons name="qrcode" size={24} color="white" />
               </TouchableOpacity>        
-              <TouchableOpacity className="bg-gray-400 " style={{ borderRadius: 50 }}>
+              <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg " style={{ borderRadius: 50, height: 50, width: 50, alignItems: "center", justifyContent: "center" }}>
       
               <MaterialCommunityIcons
               name="bell-badge-outline"
@@ -30,14 +30,15 @@ const home = () => {
               </TouchableOpacity>              
 
           </View>
-          <View>
+        </View>
+        <View>
           <TouchableOpacity>
             <Text></Text>
             <FontAwesome name="caret-down" size={24} color="white" />
           </TouchableOpacity>
           <Text></Text>
           <Text></Text>
-          <View>
+          <View className="flex-row justify-between items-center gap-y-36 p-4 ">
             <TouchableOpacity>
               <Feather name="arrow-up-left" size={24} color="white" />
               <Text>Send</Text>
@@ -53,7 +54,6 @@ const home = () => {
           </View>
           
           </View>
-        </View>
       </SafeAreaView>
       <View className="flex-1 rounded-tl-md rounded-tr-md bg-white"></View>
     </View>
