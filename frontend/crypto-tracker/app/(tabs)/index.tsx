@@ -6,12 +6,18 @@ import Feather from "@expo/vector-icons/Feather";
 import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import Asset from "@/components/assets";
 const data = [
-  {     id: 1, title: "Jay", poster_path: "/path/to/poster1.jpg" },
-  { id: 2, title: "Saka", poster_path: "/path/to/poster2.jpg" },
-  { id: 3, title: "Adrian", poster_path: "/path/to/poster3.jpg" },
-  { id: 4, title: "Tunde", poster_path: "/path/to/poster4.jpg" },
-  { id: 5, title: "Taiwo", poster_path: "/path/to/poster5.jpg" },
+  {     id: 1, title: "Jay", poster_path: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" },
+  { id: 2, title: "Saka", poster_path: "https://images.unsplash.com/photo-1695927621677-ec96e048dce2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" },
+  { id: 3, title: "Adrian", poster_path: "https://images.unsplash.com/photo-1672863601285-253fc82db868?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" },
+  { id: 4, title: "Tunde", poster_path: "https://images.unsplash.com/photo-1619895862022-09114b41f16f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" },
+  { id: 5, title: "Taiwo", poster_path: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" },
+  {     id: 6, title: "Jay", poster_path: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" },
+  { id: 7, title: "Saka", poster_path: "https://images.unsplash.com/photo-1695927621677-ec96e048dce2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" },
+  { id: 8, title: "Adrian", poster_path: "https://images.unsplash.com/photo-1672863601285-253fc82db868?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" },
+  { id: 9, title: "Tunde", poster_path: "https://images.unsplash.com/photo-1619895862022-09114b41f16f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" },
+  { id: 10, title: "Taiwo", poster_path: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" },
 ]
 const home = () => {
   return (
@@ -54,11 +60,11 @@ const home = () => {
           </View>
         </View>
         <View>
-          <TouchableOpacity className="flex-row mt-16 justify-between items-center gap-2 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg mx-4">
-            <Text className="text-white text-5xl font-bold">£100000 </Text>
+          <TouchableOpacity className="flex-row mt-10 justify-between items-center gap-2 p-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-lg mx-4">
+            <Text className="text-white text-3xl font-extrabold">£100000 </Text>
             <FontAwesome name="caret-down" size={24} color="white" />
           </TouchableOpacity>
-          <View className="flex-row justify-between items-center gap-y-36 mt-5 p-4 ">
+          <View className="flex-row justify-between items-center gap-y-36 mt-10 mb-10 p-4 ">
             <View className="items-center">
               <TouchableOpacity
                 className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg "
@@ -118,35 +124,29 @@ const home = () => {
           keyExtractor={(item) => item.id.toString()}
           horizontal
           showsHorizontalScrollIndicator={false}
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              className="mr-4"
-              style={{
-                width: 50,
-                height: 50,
-                borderRadius: 50,
-                overflow: "hidden",
-                backgroundColor: "#000",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
+          renderItem={({ item }) => 
               <Image
                 source={{
                   uri: item.poster_path,
                 }}
-            
+                style={{
+                  width: 90,
+                  height: 90,
+                  borderRadius: 50,
+                  overflow: "hidden",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  margin:4
+                  
+                }}
                 contentFit="cover"
               />
-              <Text
-                className="text-black text-sm mt-1 "
-              >
-                {item.title}
-              </Text>
-            </TouchableOpacity>
-          )}
+            
+           
+          }
         />
       </View>
+      <Asset/>
      </View>
     </View>
   );
