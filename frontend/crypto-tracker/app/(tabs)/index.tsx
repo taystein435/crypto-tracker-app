@@ -39,18 +39,30 @@ const home = () => {
           <Text></Text>
           <Text></Text>
           <View className="flex-row justify-between items-center gap-y-36 p-4 ">
-            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg ">
+            <View>
+            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg " style={{ borderRadius: 50, height: 50, width: 50, alignItems: "center", justifyContent: "center" }}>
               <Feather name="arrow-up-left" size={24} color="white" />
-              <Text className="text-white">Send</Text>
+            
             </TouchableOpacity>
-            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg ">
-              <Feather name="arrow-up-right" size={24} color="white" />
-              <Text className="text-white">Receive</Text>
-            </TouchableOpacity>
-            <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg ">
+            <Text className="text-white">Send</Text>
+            </View>
+
+           <View>
+           <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg " style={{ borderRadius: 50, height: 50, width: 50, alignItems: "center", justifyContent: "center" }}>
               <FontAwesome5 name="plus" size={24} color="white" />
-              <Text className="text-white">Buy</Text>
+             
             </TouchableOpacity>
+            <Text className="text-white">Buy</Text>
+           </View>
+          <View>
+          <TouchableOpacity className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl shadow-lg " style={{ borderRadius: 50, height: 50, width: 50, alignItems: "center", justifyContent: "center" }}>
+              <Feather name="arrow-up-right" size={24} color="white" />
+             
+            </TouchableOpacity>
+            <Text className="text-white">Receive</Text>
+            </View>
+           
+            
           </View>
           
           </View>
